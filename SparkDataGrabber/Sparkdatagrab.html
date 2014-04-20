@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <!-- If you would like your page to autorefresh, which you probably will!-->
+  <meta http-equiv="refresh" content="30" />
+  <title>Temperature and Lights</title>
+  
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+ 
+<script>
+$.getJSON("https://api.spark.io/v1/devices/INSERT-YOUR-DEVICE-ID/result?access_token=INSERT-YOUR-ACCESS-TOKEN", function(person){
+
+    //$.each(person, function(key, value){
+        //document.write(key+": "+value+"<br />"); 
+    //});
+
+    var p = JSON.parse(person.result);
+    document.write(p.data1+"<br />");
+    document.write(p.data2+"<br />");
+});
+</script>
+ 
+</body>
+</html>
