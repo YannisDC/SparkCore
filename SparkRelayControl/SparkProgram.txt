@@ -5,6 +5,7 @@
 // name the pins
 int led1 = D0;
 int led2 = D1;
+int ledOne = 0;
 
 // This routine runs only once upon reset
 void setup()
@@ -19,13 +20,15 @@ void setup()
    // Initialize both the LEDs to be OFF
    digitalWrite(led1, LOW);
    digitalWrite(led2, LOW);
+   
+   Spark.variable("ledOne", &ledOne, INT);
 }
 
 
 // This routine loops forever 
 void loop()
 {
-   // Nothing to do here
+   ledOne = digitalRead(D0);
 }
 
 
