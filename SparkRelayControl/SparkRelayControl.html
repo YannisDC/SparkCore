@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <!--<meta http-equiv="refresh" content="30" />-->
+  <title>Relay Trigger</title>
+  
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="spcont.css">
+    
+</head>
+<body>
+ 
+<form>
+  <p>Spark Control</p>
+  <input class="reddy" type="range" value="66"/>
+  <input class="greeny" type="range" value="33"/>
+  <input class="bluey" type="range" value="100"/>
+  <input class="general" type="range" value="50"/>
+</form>    
+    
+<div id="button_container">    
+    <div id="button">
+        <button id="on"><p class="but">ON</p></button>
+        <button id="test"><p class="but">TEST</p></button>
+    </div>
+    <div id="result">result</div>
+</div>
+
+
+    
+<div class="container">
+  <div class="slider">
+  <input class="general" type = "range" min="0" max="100" onchange="rangevalue.value=value"/>
+	<output id="rangevalue">50</output>
+  </div>
+</div>
+    
+
+       
+<script type="text/javascript" src="toggle.js"></script>
+
+</body>
+</html>

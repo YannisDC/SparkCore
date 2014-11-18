@@ -1,0 +1,18 @@
+char resultstr[64];
+
+void setup()
+{
+    pinMode(A0, INPUT); // setup A0 as analog input
+    pinMode(A1, INPUT); // setup A1 as analog input
+    // expose your char buffer to the Cloud API
+    Spark.variable("result", &resultstr, STRING); 
+}
+
+void loop()
+{
+    int data1 = analogRead(A0); // read some data
+    int data2 = analogRead(A1); // some some other data
+    // format your data as JSON, don't forget to escape the double quotes
+    sprintf(resultstr, "{\"data1\":%d,\"data2\":%d}", data1, data2); 
+    delay(1000); // wait for a second
+}
