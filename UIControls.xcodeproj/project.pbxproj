@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		477F6B171A1B4D320071D680 /* SparkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 477F6B161A1B4D320071D680 /* SparkModel.swift */; };
 		47D257441A1A63F600BE4607 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D257431A1A63F600BE4607 /* AppDelegate.swift */; };
 		47D257461A1A63F600BE4607 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D257451A1A63F600BE4607 /* ViewController.swift */; };
 		47D257491A1A63F600BE4607 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47D257471A1A63F600BE4607 /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		477F6B161A1B4D320071D680 /* SparkModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SparkModel.swift; sourceTree = "<group>"; };
 		47D2573E1A1A63F500BE4607 /* UIControls.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIControls.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47D257421A1A63F500BE4607 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		47D257431A1A63F600BE4607 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -56,9 +58,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		477F6B181A1B4D400071D680 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				477F6B161A1B4D320071D680 /* SparkModel.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		47D257351A1A63F500BE4607 = {
 			isa = PBXGroup;
 			children = (
+				477F6B181A1B4D400071D680 /* Models */,
 				47D257401A1A63F500BE4607 /* UIControls */,
 				47D257561A1A63F600BE4607 /* UIControlsTests */,
 				47D2573F1A1A63F500BE4607 /* Products */,
@@ -214,6 +225,7 @@
 			files = (
 				47D257461A1A63F600BE4607 /* ViewController.swift in Sources */,
 				47D257441A1A63F600BE4607 /* AppDelegate.swift in Sources */,
+				477F6B171A1B4D320071D680 /* SparkModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,6 +419,7 @@
 				47D2575F1A1A63F600BE4607 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		47D257601A1A63F600BE4607 /* Build configuration list for PBXNativeTarget "UIControlsTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +428,7 @@
 				47D257621A1A63F600BE4607 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
